@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link href="./css/styles.css" rel="stylesheet" />
+  <link href="./css/mobile.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div id="section1" class="main_section-sidebar">
+      <div class="sidebar_profile">
+        <h6>Profile 1</h6>
+        <span class="exit sidebar_left_exit">✖</span>
+      </div>
+      <div class="sidebar_first">
+        <div class="card-panel">
+          <span>I am a very simple card. I am good at containing small bits of
+            information.
+          </span>
+        </div>
+      </div>
+      <div class="sidebar_second">
+        <div class="card-panel">
+          <div class="button-area">
+            <a class="waves-effect waves-light btn-small">button</a>
+            <a class="waves-effect waves-light btn-small">✖</a>
+          </div>
+          <div class="button-area">
+            <a class="waves-effect waves-light btn-small">button</a>
+            <a class="waves-effect waves-light btn-small">✖</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_three">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" />
+          <label for="email">Email</label>
+          <a class="waves-effect waves-light btn-small saveBtn">button</a>
+
+        </div>
+        <div class="input-field col s12 lobby">
+          <a class="waves-effect waves-light btn-small ">Go Back To Lobby</a>
+        </div>
+      </div>
+    </div>
+    <div id="section2" class="main_section-center">
+      <section class="msger">
+        <header class="msger-header">
+          <div id="left_profile" class=" msger-header-options">
+            <span> <i class=" material-icons">reorder</i></span>
+          </div>
+          <div class="msger-header-options">
+            <span>Lobby</span>
+          </div>
+          <div id="right_profile" class="msger-header-options">
+            <span> <i class=" material-icons">reorder</i></span>
+          </div>
+        </header>
+        <main class="msger-chat">
+          <div class="msg left-msg">
+
+
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">BOT</div>
+                <div class="msg-info-time">12:45</div>
+              </div>
+
+              <div class="msg-text">
+                Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+              </div>
+            </div>
+          </div>
+
+          <div class="msg right-msg">
+
+
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Sajad</div>
+                <div class="msg-info-time">12:46</div>
+              </div>
+
+              <div class="msg-text">
+                <span>I am a very simple card. I am good at containing small bits of information. I am convenient
+                  because I require little markup to
+                  use effectively. I am similar to what is called a panel in other
+                  frameworks.
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" placeholder="Enter your message...">
+          <!-- <img src="./assets/images/bookImage.jpg" class="selectedImage" alt=""> -->
+
+          <div class="image_box">
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage.jpg" onclick="selectImageHandler(event)"  alt="">
+            </div>
+            <div class="boxes">
+              <img src="./assets/images/bookImage2.jpg" onclick="selectImageHandler(event)" alt="">
+            </div>
+          </div>
+          <img src="./assets/images/bookImage.jpg" class="selectedImage d-none" id="selectedImage" alt="">
+          <button id="attach" class="waves-effect waves-light btn" type="button"><i
+              class=" material-icons ">attach_file</i></button>
+          <button class="waves-effect waves-light btn attach sendbtn" type="button" id="btnSubmit"><i
+              class="material-icons">send</i></button>
+        </form>
+      </section>
+
+
+
+    </div>
+    <div id="section3" class="main_section-sidebar">
+      <div class="sidebar_profile">
+        <span class="exit sidebar_right_exit">✖</span>
+        <h6>Profile 2</h6>
+      </div>
+      <div class="sidebar_first">
+        <div class="card-panel">
+          <span>I am a very simple card. I am good at containing small bits of
+            information.
+          </span>
+        </div>
+      </div>
+      <div class="sidebar_second">
+        <div class="card-panel">
+          <div class="button-area">
+            <a class="waves-effect waves-light btn-small">button</a>
+            <a class="waves-effect waves-light btn-small">✖</a>
+          </div>
+          <div class="button-area">
+            <a class="waves-effect waves-light btn-small">button</a>
+            <a class="waves-effect waves-light btn-small">✖</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_three">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" />
+          <label for="email">Email</label>
+          <a class="waves-effect waves-light btn-small saveBtn">button</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/materialize.min.js"></script>
+</body>
+
+</html>
